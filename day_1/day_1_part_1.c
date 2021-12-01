@@ -11,7 +11,7 @@ int main()
     result = 0;
     n_args = 0;
     n1, n2 = -1;
-    input = fopen("day_1_input.txt", "r");
+    input = fopen("day_1_input_part_1", "r");
     while (n_args != -1)
     {
         // Hacky, but it works
@@ -22,7 +22,7 @@ int main()
         if (n_args != -1 && n2 > n1)
             result++;
     }
-    output = fopen("day_1_output.txt", "w");
+    output = fopen("day_1_output_part_1", "w");
     fprintf(output, "%d\n", result);
     fclose(output); 
     fclose(input);
