@@ -11,7 +11,7 @@ int main()
     result = 0;
     n_args = 0;
     n1, n2 = -1;
-    input = fopen("day_1_input_part_1", "r");
+    input = fopen("day_1_input", "r");
     while (n_args != -1)
     {
         // Hacky, but it works
