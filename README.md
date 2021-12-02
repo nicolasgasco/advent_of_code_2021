@@ -4,28 +4,28 @@
 Source [here](https://adventofcode.com/).
 
 ## Days completed
-1. [X] Dec, 1 
-2. [X] Dec, 2
-3. [ ] Dec, 3
-4. [ ] Dec, 4
-5. [ ] Dec, 5
-6. [ ] Dec, 6
-7. [ ] Dec, 7
-8. [ ] Dec, 8
-9. [ ] Dec, 9
-10. [ ] Dec, 10
-11. [ ] Dec, 11
-12. [ ] Dec, 12
-13. [ ] Dec, 13
-14. [ ] Dec, 14
-15. [ ] Dec, 15
-16. [ ] Dec, 16
-17. [ ] Dec, 17
-18. [ ] Dec, 18
-19. [ ] Dec, 19
-20. [ ] Dec, 20
-21. [ ] Dec, 21
-22. [ ] Dec, 22
-23. [ ] Dec, 23
-24. [ ] Dec, 24
-25. [ ] Dec, 25
+1. [X] Day 1 
+2. [X] Day 2
+3. [ ] Day 3
+4. [ ] Day 4
+5. [ ] Day 5
+6. [ ] Day 6
+7. [ ] Day 7
+8. [ ] Day 8
+9. [ ] Day 9
+10. [ ] Day 10
+11. [ ] Day 11
+12. [ ] Day 12
+13. [ ] Day 13
+14. [ ] Day 14
+15. [ ] Day 15
+16. [ ] Day 16
+17. [ ] Day 17
+18. [ ] Day 18
+19. [ ] Day 19
+20. [ ] Day 20
+21. [ ] Day 21
+22. [ ] Day 22
+23. [ ] Day 23
+24. [ ] Day 24
+25. [ ] Day 25
