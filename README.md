@@ -5,3 +5,4 @@ Source [here](https://adventofcode.com/).
 
 ## Days completed
 1. [X] Dec, 1 
+2. [X] Dec, 2
