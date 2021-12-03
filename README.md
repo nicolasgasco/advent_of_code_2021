@@ -6,7 +6,7 @@ Source [here](https://adventofcode.com/).
 ## Days completed
 1. [X] Day 1 
 2. [X] Day 2
-3. [ ] Day 3
+3. [X] Day 3
 4. [ ] Day 4
 5. [ ] Day 5
 6. [ ] Day 6
