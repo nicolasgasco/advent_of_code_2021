@@ -1,3 +1,6 @@
+from types import CodeType
+
+
 def list_from_file(file, boards):
     """Create a list from a file"""
     with open(file) as f:
@@ -6,7 +9,6 @@ def list_from_file(file, boards):
     counter = 0
     board = []
     for i, line in enumerate(lines):
-        # print(f"{i}: {line}")
         if i == 0:
             numbers = line.strip().split(",")
         elif line == "\n":
@@ -23,33 +25,49 @@ def list_from_file(file, boards):
 
 boards = []
 numbers = list_from_file("day_4_input", boards)
-# N of numbers drawn, line with marked numbers, index of board in array, drawn numbers
-winning_line = (0, "", 0, "")
+winning_line = (0, "") # index of board, drawn number
 
-for i, board in enumerate(boards):
-    for line in board:
-        n_found = 0
-        numbers_drawn = 0
-        for index, number in enumerate(numbers):
-            numbers_drawn += 1
+for index, number in enumerate(numbers):
+    # First mark all drawn numbers with -1
+    for i, board in enumerate(boards):
+        for ind, line in enumerate(board):
             if number in line:
-                n_found += 1
-            if n_found == 5:
-                if winning_line[0] == 0:
-                    winning_line = (numbers_drawn, line, i, number)
+                line = ["-1" if num == number else num for num in line]
+                boards[i][ind] = line
+    
+    # For every drawn number, check if one board is completed
+    for i, board in enumerate(boards):
+        for line in board:
+            # I'm checking columns only
+            # I knew it wasn't a row through trial and error
+            for n in range(5):
+                sum = 0
+                for line in board:
+                    sum += int(line[n])
+                if sum == -5:
+                    winning_line = (i, number)
+                    break
+                # Look soon, how beautiful this Christmas tree is
                 else:
-                    if numbers_drawn < winning_line[0]:
-                        winning_line = (numbers_drawn, line, i, number)
+                    continue
+                break
+            else:
+                continue
+            break
+        else:
+            continue
+        break
+    else:
+        continue
+    break
 
-print(winning_line)
-print(numbers[:numbers.index(winning_line[3]) + 1])
+# Summing all non marked numbers
 sum = 0
-for line in boards[winning_line[2]]:
-    for num in line:
-        if num not in numbers[:numbers.index(winning_line[3]) + 1]:
-            sum += int(num)
+for line in boards[winning_line[0]]:
+    for number in line:
+        if number != "-1":
+            sum += int(number)
 
-print(sum * 35)
 output = open("day_4_output", "w")
-# output.write(str(sum * winning_line[3]))
+output.write(str(sum * int(winning_line[1])))
 output.close()
