@@ -7,7 +7,7 @@ Source [here](https://adventofcode.com/).
 1. [X] Day 1 
 2. [X] Day 2
 3. [X] Day 3
-4. [ ] Day 4
+4. [x] Day 4
 5. [ ] Day 5
 6. [ ] Day 6
 7. [ ] Day 7
