@@ -50,5 +50,16 @@ rules.forEach((rule_set) => {
     }
   }
 });
-console.log(width);
-console.log(height);
+
+board = [];
+for (let y = 0; y < height; y++) {
+  line = [];
+  for (let x = 0; x < width; x++) {
+    line.push(".");
+  }
+  board.push(line);
+}
+
+rules.forEach((rule_set) => {
+  console.log(rule_set);
+});
